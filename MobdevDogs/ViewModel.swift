@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 import AlamofireImage
+import AppImageViewer
 
 let imageCache = AutoPurgingImageCache(
     memoryCapacity: 100 * 1024 * 1024,
@@ -41,7 +42,7 @@ class ViewModel{
         }
     }
 }
-extension UIViewController {
+extension UIViewController: AppImageViewerDelegate{
     
     func Alert(tittle: String, message: String){
         let alert = UIAlertController(title: tittle, message: message, preferredStyle: .alert)
@@ -71,5 +72,12 @@ extension UIViewController {
             })
         }
     
-    }   
+    }
+    
+    func ShowImage(image: UIImageView){
+        let appImage = ViewerImage.appImage(forImage: image.image!)
+        let viewer = AppImageViewer(originImage: image.image!, photos: [appImage], animatedFromView: image)
+        viewer.delegate = self
+        present(viewer, animated: true, completion: nil)
+    }
 }

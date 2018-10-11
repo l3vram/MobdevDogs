@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import AlamofireImage
+import AppImageViewer
 class DetailViewController: UIViewController{
     
     
@@ -30,7 +31,7 @@ class DetailViewController: UIViewController{
         initDetails()
         title = breed.capitalized
     }
-   
+    
     func initDetails() {
         navigationItem.largeTitleDisplayMode = .never
         view.addSubview(collect)
@@ -93,4 +94,14 @@ extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSo
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 3, left: 3, bottom: 3, right: 3)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collect.cellForItem(at: indexPath) as! CollectionViewCell
+        if let _ = cell.imageView.image{
+            ShowImage(image: cell.imageView)
+        }
+    }
+    
 }
+
+
