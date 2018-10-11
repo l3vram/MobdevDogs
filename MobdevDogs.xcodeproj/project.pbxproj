@@ -16,6 +16,7 @@
 		487572D4216D453A003F4BC8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487572D3216D453A003F4BC8 /* ViewModel.swift */; };
 		4884B58F216D58DF0017C797 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4884B58E216D58DF0017C797 /* Model.swift */; };
 		48CBE7A5216E25FE00F105FB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CBE7A4216E25FE00F105FB /* DetailViewController.swift */; };
+		48ECA664216FECA4004DFE3D /* DPTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ECA663216FECA4004DFE3D /* DPTheme.swift */; };
 		8243511ABC2063CCC847B9BE /* Pods_MobdevDogs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF9FAF16A568F673A8FE49DA /* Pods_MobdevDogs.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		487572D3216D453A003F4BC8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		4884B58E216D58DF0017C797 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		48CBE7A4216E25FE00F105FB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		48ECA663216FECA4004DFE3D /* DPTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPTheme.swift; sourceTree = "<group>"; };
 		E5752FB6E120C1E0F460489C /* Pods-MobdevDogs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobdevDogs.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobdevDogs/Pods-MobdevDogs.release.xcconfig"; sourceTree = "<group>"; };
 		FF9FAF16A568F673A8FE49DA /* Pods_MobdevDogs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobdevDogs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -79,6 +81,7 @@
 				487572C8216D416A003F4BC8 /* Assets.xcassets */,
 				487572CA216D416A003F4BC8 /* LaunchScreen.storyboard */,
 				487572CD216D416A003F4BC8 /* Info.plist */,
+				48ECA663216FECA4004DFE3D /* DPTheme.swift */,
 			);
 			path = MobdevDogs;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				48CBE7A5216E25FE00F105FB /* DetailViewController.swift in Sources */,
 				487572C2216D4166003F4BC8 /* AppDelegate.swift in Sources */,
 				4884B58F216D58DF0017C797 /* Model.swift in Sources */,
+				48ECA664216FECA4004DFE3D /* DPTheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

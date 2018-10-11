@@ -50,7 +50,7 @@ extension UIViewController: AppImageViewerDelegate{
         self.present(alert, animated: true, completion: nil)
     }
     func Heigth()-> CGSize{
-        let heigth = (view.frame.size.width - 26) / 3
+        let heigth = (view.frame.size.width - 36) / 4
         return CGSize(width: heigth, height: heigth)
     }
     func SetImage(url: URL, completion: @escaping (UIImage?,Error?)-> Void){

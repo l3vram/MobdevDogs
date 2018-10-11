@@ -17,6 +17,7 @@ class DetailViewController: UIViewController{
     var breed: String = ""
     var images: [String] = []
     var vm = ViewModel()
+    
     var collect: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let collect = UICollectionView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), collectionViewLayout: layout)
@@ -83,7 +84,7 @@ extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSo
                 }
             }
         }
-        cell.layer.shadowOpacity = 0.3
+        cell.layer.shadowOpacity = 0.1
         return cell
     }
     
@@ -92,7 +93,7 @@ extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 3, left: 3, bottom: 3, right: 3)
+        return UIEdgeInsets(top: 3, left: 3, bottom: 4, right: 3)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

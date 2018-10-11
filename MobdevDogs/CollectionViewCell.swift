@@ -15,7 +15,7 @@ class CollectionViewCell: UICollectionViewCell {
         i.translatesAutoresizingMaskIntoConstraints = false
         i.contentMode = .scaleAspectFill
         i.clipsToBounds = true
-        i.layer.cornerRadius = 7
+        i.layer.cornerRadius = 2
         return i
     }()
     
