@@ -16,7 +16,6 @@ class DetailViewController: UIViewController{
     var breed: String = ""
     var images: [String] = []
     var vm = ViewModel()
-    //var collect: UICollectionView!
     var collect: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let collect = UICollectionView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), collectionViewLayout: layout)

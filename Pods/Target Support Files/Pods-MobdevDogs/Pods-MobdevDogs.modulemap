@@ -1,0 +1,6 @@
+framework module Pods_MobdevDogs {
+  umbrella header "Pods-MobdevDogs-umbrella.h"
+
+  export *
+  module * { export * }
+}
