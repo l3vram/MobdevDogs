@@ -75,9 +75,8 @@ extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collect.dequeueReusableCell(withReuseIdentifier: cellid, for: indexPath) as! CollectionViewCell
-        let filter = AspectScaledToFillSizeFilter(size: CGSize(width: 100, height: 100))
         if let url = URL(string: images[indexPath.row]){
-            cell.imageView.af_setImage(withURL: url, filter: filter,imageTransition: .crossDissolve(0.2))
+            cell.imageView.af_setImage(withURL: url,imageTransition: .crossDissolve(0.2))
         }
         cell.layer.shadowOpacity = 0.1
         return cell
