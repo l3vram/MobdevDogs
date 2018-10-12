@@ -76,17 +76,15 @@ extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collect.dequeueReusableCell(withReuseIdentifier: cellid, for: indexPath) as! CollectionViewCell
-        
+        let filter = AspectScaledToFillSizeFilter(size: CGSize(width: 100, height: 100))
         if let url = URL(string: images[indexPath.row]){
-            SetImage(url: url) { image, error in
-                if let i = image{
-                    cell.imageView.image = i
-                }
-            }
+            cell.imageView.af_setImage(withURL: url, filter: filter,imageTransition: .crossDissolve(0.2))
         }
         cell.layer.shadowOpacity = 0.1
         return cell
     }
+    
+    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return Heigth()
@@ -104,5 +102,6 @@ extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSo
     }
     
 }
+
 
 
