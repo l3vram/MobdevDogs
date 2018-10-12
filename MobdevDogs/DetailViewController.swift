@@ -12,7 +12,6 @@ import AlamofireImage
 import AppImageViewer
 class DetailViewController: UIViewController{
     
-    
     let cellid = "cell1"
     var breed: String = ""
     var images: [String] = []
@@ -83,9 +82,7 @@ extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSo
         cell.layer.shadowOpacity = 0.1
         return cell
     }
-    
-    
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return Heigth()
     }
