@@ -1,4 +1,3 @@
 # MobdevDogs
- MobdevDogs
  
  ![](dogs.gif)
